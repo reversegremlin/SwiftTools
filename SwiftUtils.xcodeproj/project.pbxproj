@@ -10,6 +10,7 @@
 		4629AA2319FEF093008AFA9E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629AA2219FEF093008AFA9E /* main.swift */; };
 		4629AA2A19FEF0DC008AFA9E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629AA2919FEF0DC008AFA9E /* Node.swift */; };
 		4629AA2C19FEF116008AFA9E /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629AA2B19FEF116008AFA9E /* Queue.swift */; };
+		4637D9E019FEF7ED00C0D63F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637D9DF19FEF7ED00C0D63F /* Utils.swift */; };
 		46FD5CBF19FEF473007B7928 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD5CBE19FEF473007B7928 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		4629AA2219FEF093008AFA9E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4629AA2919FEF0DC008AFA9E /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		4629AA2B19FEF116008AFA9E /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		4637D9DF19FEF7ED00C0D63F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		46FD5CBE19FEF473007B7928 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				4629AA2919FEF0DC008AFA9E /* Node.swift */,
 				4629AA2B19FEF116008AFA9E /* Queue.swift */,
 				46FD5CBE19FEF473007B7928 /* Stack.swift */,
+				4637D9DF19FEF7ED00C0D63F /* Utils.swift */,
 			);
 			path = SwiftUtils;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4637D9E019FEF7ED00C0D63F /* Utils.swift in Sources */,
 				46FD5CBF19FEF473007B7928 /* Stack.swift in Sources */,
 				4629AA2319FEF093008AFA9E /* main.swift in Sources */,
 				4629AA2C19FEF116008AFA9E /* Queue.swift in Sources */,
