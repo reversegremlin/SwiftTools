@@ -11,11 +11,4 @@ import Cocoa
 class Node<T> {
     var key: T? = nil
     var next: Node? = nil
-    
-    func description() ->String {
-        var returnString = "<"
-        returnString += _stdlib_getDemangledTypeName(self)
-//        let b: AnyObject?  = k
-        return returnString
-    }
 }

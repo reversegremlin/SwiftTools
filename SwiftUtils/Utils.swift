@@ -8,15 +8,6 @@
 
 import Cocoa
 
-//
-//func exchange<T>(data:[T], i:Int, j:Int) -> [T]
-//{
-//    var newData = data
-//    newData[i] = data[j]
-//    newData[j] = data[i]
-//    return newData
-//}
-//
 //func insertionSort <T> (inout data:[T]) {
     func insertionSort (inout data:[Int]) {
         var newData = data
@@ -34,3 +25,26 @@ import Cocoa
             }
         data = newData
     }
+
+//switch a {
+//case let left as Int:
+//    let right = b as Int
+//    if left > right {
+//        swap()
+//        j--
+//    }
+//            case let left as Float:
+//                let right = b as Float
+//                if left > right {
+//                    swap()
+//                }
+//            case let left as Double:
+//                let right = b as Double
+//                if left > right {
+//                    swap()
+//                }
+//default :
+//    println("I have no idea")
+//}
+
+

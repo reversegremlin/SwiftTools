@@ -44,24 +44,4 @@ for thing in rArray {
     println(thing)
 }
 
-//switch a {
-//case let left as Int:
-//    let right = b as Int
-//    if left > right {
-//        swap()
-//        j--
-//    }
-    //            case let left as Float:
-    //                let right = b as Float
-    //                if left > right {
-    //                    swap()
-    //                }
-    //            case let left as Double:
-    //                let right = b as Double
-    //                if left > right {
-    //                    swap()
-    //                }
-//default :
-//    println("I have no idea")
-//}
 
