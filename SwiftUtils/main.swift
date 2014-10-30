@@ -29,35 +29,12 @@ for index in 1...10 {
         println(foo)
     }
 }
-//
-//func insertionSort <T> (inout data:[T]) {
-//    var newData = data as Array
-//    let count: Int = newData.count
-//
-//    for (var i = 0; i < count; ++i) {
-//        var j = i
-//        if (j > 0) {
-//            
-//            // This is where I need to do the case switching
-//            
-//            let x = newData[j] as Int
-//            let y = newData[j - 1] as Int
-//            
-//            if x > y {
-//                let z = newData[j]
-//                newData[j] = newData[j - 1]
-//                newData[j - 1] = z
-//            }
-//        }
-//    }
-//    data = newData
-//}
 
 var rArray: [Int] = []
 
 
-for nums in 1...100 {
-    let ran = Int(arc4random() % 26)
+for nums in 1...1000 {
+    let ran = Int(arc4random() % 1000)
     rArray.append(ran)
 }
 
@@ -87,14 +64,4 @@ for thing in rArray {
 //default :
 //    println("I have no idea")
 //}
-
-
-//func swap() {
-//    let tmp = a
-//    newData[j - 1] = b
-//    newData[j] = tmp
-//}
-
-
-
 

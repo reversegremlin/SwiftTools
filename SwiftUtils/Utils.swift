@@ -17,25 +17,20 @@ import Cocoa
 //    return newData
 //}
 //
-    func insertionSort <T> (inout data:[T]) {
-        var newData = data as Array
+//func insertionSort <T> (inout data:[T]) {
+    func insertionSort (inout data:[Int]) {
+        var newData = data
         let count: Int = newData.count
         
-        for (var i = 0; i < count; ++i) {
+        for (var i = 1; i < count; ++i) {
             var j = i
-            if (j > 0) {
-                
-                // This is where I need to do the case switching
-                
-                let x = newData[j] as Int
-                let y = newData[j - 1] as Int
-                
-                if x > y {
-                    let z = newData[j]
-                    newData[j] = newData[j - 1]
-                    newData[j - 1] = z
+            while (j > 0) && newData[j - 1] > newData[j] {
+
+                let z = newData[j]
+                newData[j] = newData[j - 1]
+                newData[j - 1] = z
+                j--
                 }
             }
-        }
         data = newData
     }
