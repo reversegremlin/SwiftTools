@@ -26,6 +26,24 @@ import Cocoa
         data = newData
     }
 
+func insertionSort (inout data:[String]) {
+    var newData = data
+    let count: Int = newData.count
+
+    for (var i = 1; i < count; ++i) {
+        var j = i
+        while (j > 0) && newData[j - 1] > newData[j] {
+
+            let z = newData[j]
+            newData[j] = newData[j - 1]
+            newData[j - 1] = z
+            j--
+        }
+    }
+    data = newData
+}
+
+
 //switch a {
 //case let left as Int:
 //    let right = b as Int

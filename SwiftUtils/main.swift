@@ -38,9 +38,32 @@ for nums in 1...1000 {
     rArray.append(ran)
 }
 
+//NSString *dictionary = [NSString stringWithContentsOfFile: @"/usr/share/dict/words"
+//encoding: NSUTF8StringEncoding
+//error: nil];
+//
+//NSArray *words = [NSArray arrayWithArray:[dictionary componentsSeparatedByString:@"\n"]];
+//
+//_randomStrings = [[NSMutableArray arrayWithCapacity:_N] mutableCopy];
+//
+//for (int i = 0; i < _N; ++i) {
+//    int r = arc4random_uniform((int)[words count]);
+//    [_randomStrings addObject:words[r]];
+//}
+
+var randStrings = ["monkey", "donkey", "spider", "orangutan", "shark", "bee", "fly", "tiger", "lion", "bear"]
+
+
 insertionSort(&rArray)
 
 for thing in rArray {
+    println(thing)
+}
+
+insertionSort(&randStrings)
+
+
+for thing in randStrings {
     println(thing)
 }
 
