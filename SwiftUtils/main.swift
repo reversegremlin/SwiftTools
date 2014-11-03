@@ -33,7 +33,7 @@ for index in 1...10 {
 var rArray: [Int] = []
 
 
-for nums in 1...1000 {
+for nums in 1...5 {
     let ran = Int(arc4random() % 1000)
     rArray.append(ran)
 }
@@ -54,17 +54,20 @@ for nums in 1...1000 {
 var randStrings = ["monkey", "donkey", "spider", "orangutan", "shark", "bee", "fly", "tiger", "lion", "bear"]
 
 
-insertionSort(&rArray)
+//insertionSort(&rArray)
+
+mergeSort(&rArray)
+
 
 for thing in rArray {
     println(thing)
 }
-
-insertionSort(&randStrings)
-
-
-for thing in randStrings {
-    println(thing)
-}
+//
+//insertionSort(&randStrings)
+//
+//
+//for thing in randStrings {
+//    println(thing)
+//}
 
 
