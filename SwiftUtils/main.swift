@@ -57,7 +57,6 @@ var randStrings = ["monkey", "donkey", "spider", "orangutan", "shark", "bee", "f
 mergeSort(&rArray)
 
 
-
 for thing in rArray {
     println(thing)
 }

@@ -57,7 +57,10 @@ class Queue<T> {
         }
     }
     
-    func peek() -> T? {
-        return head.key!
+  func peek() -> T? {
+    if let key = head?.key {
+      return key
     }
+    return nil
+  }
 }

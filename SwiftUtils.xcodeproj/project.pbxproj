@@ -12,6 +12,7 @@
 		4629AA2C19FEF116008AFA9E /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629AA2B19FEF116008AFA9E /* Queue.swift */; };
 		462F2F621A0822D2006C50D5 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F2F611A0822D2006C50D5 /* Merge.swift */; };
 		4637D9E019FEF7ED00C0D63F /* Insertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637D9DF19FEF7ED00C0D63F /* Insertion.swift */; };
+		46B0D2411A0BFC530049F7FE /* Quick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0D2401A0BFC530049F7FE /* Quick.swift */; };
 		46FD5CBF19FEF473007B7928 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD5CBE19FEF473007B7928 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		4629AA2B19FEF116008AFA9E /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		462F2F611A0822D2006C50D5 /* Merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		4637D9DF19FEF7ED00C0D63F /* Insertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insertion.swift; sourceTree = "<group>"; };
+		46B0D2401A0BFC530049F7FE /* Quick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quick.swift; sourceTree = "<group>"; };
 		46FD5CBE19FEF473007B7928 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				46FD5CBE19FEF473007B7928 /* Stack.swift */,
 				4637D9DF19FEF7ED00C0D63F /* Insertion.swift */,
 				462F2F611A0822D2006C50D5 /* Merge.swift */,
+				46B0D2401A0BFC530049F7FE /* Quick.swift */,
 			);
 			path = SwiftUtils;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 				462F2F621A0822D2006C50D5 /* Merge.swift in Sources */,
 				4637D9E019FEF7ED00C0D63F /* Insertion.swift in Sources */,
 				46FD5CBF19FEF473007B7928 /* Stack.swift in Sources */,
+				46B0D2411A0BFC530049F7FE /* Quick.swift in Sources */,
 				4629AA2319FEF093008AFA9E /* main.swift in Sources */,
 				4629AA2C19FEF116008AFA9E /* Queue.swift in Sources */,
 				4629AA2A19FEF0DC008AFA9E /* Node.swift in Sources */,
