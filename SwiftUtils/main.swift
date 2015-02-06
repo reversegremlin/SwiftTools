@@ -32,11 +32,24 @@ for index in 1...10 {
 
 var rArray: [Int] = []
 
-
+var i = 1
 for nums in 1...1000 {
-    let ran = Int(arc4random() % 1000)
-    rArray.append(ran)
+//    let ran = Int(arc4random() % 1000)
+
+    rArray.append(i++)
 }
+
+func shuffle<C: MutableCollectionType where C.Index == Int>(var list: C) -> C {
+  let count = countElements(list)
+  for i in 0..<(count - 1) {
+    let j = Int(arc4random_uniform(UInt32(count - i))) + i
+    swap(&list[i], &list[j])
+  }
+  return list
+}
+
+var nArray = shuffle(rArray)
+
 
 //NSString *dictionary = [NSString stringWithContentsOfFile: @"/usr/share/dict/words"
 //encoding: NSUTF8StringEncoding
@@ -51,21 +64,38 @@ for nums in 1...1000 {
 //    [_randomStrings addObject:words[r]];
 //}
 
-var randStrings = ["monkey", "donkey", "spider", "orangutan", "shark", "bee", "fly", "tiger", "lion", "bear"]
+//var randStrings = ["monkey", "donkey", "spider", "orangutan", "shark", "bee", "fly", "tiger", "lion", "bear"]
 
 
-mergeSort(&rArray)
+//Users/hexjunky/Downloads
+
+var text = String(contentsOfFile:"/Users/hexjunky/Downloads/QuickSort.txt", encoding: NSUTF8StringEncoding, error: nil)!
+var stringArray = text.componentsSeparatedByString("\n")
+var intArray = [Int]()
+
+for intStr in stringArray {
+  let item: String = intStr.stringByReplacingOccurrencesOfString("\r", withString: "", options: nil, range: nil)
+  if let intVal = item.toInt() {
+    intArray.append(intVal)
+  }
+}
 
 
-for thing in rArray {
+
+//quickSortLastElement(&intArray)
+quickSortFirstElement(&intArray)
+
+//quickSort(&intArray)
+//mergeSort(&nArray)
+for thing in intArray {
     println(thing)
 }
 
-insertionSort(&randStrings)
-
-
-for thing in randStrings {
-    println(thing)
-}
+//insertionSort(&randStrings)
+//
+//
+//for thing in randStrings {
+//    println(thing)
+//}
 
 

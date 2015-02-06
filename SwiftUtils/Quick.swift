@@ -8,45 +8,90 @@
 
 import Foundation
 
-func quickSort <T: Comparable> (inout data:[T]) {
-    if data.count == 0 {
+var comparisons = 0
 
-    }
+func quickSortFirstElement (inout data:[Int], lo: Int, hi: Int) {
+  if lo < hi {
+    var p = partitionFirst(&data, lo, hi)
+    comparisons += ((p - 1) - lo)
+    quickSortFirstElement(&data, lo, p - 1)
+    comparisons += (hi - (p + 1))
+    quickSortFirstElement(&data, p + 1, hi)
+  }
 }
 
-//+ (NSArray *)sort:(NSArray *)array {
-//    if ([array count] > 0) {
-//        id object = [array objectAtIndex:0];
-//        if ([object isKindOfClass:[NSString class]]) {
-//            array = [NSArray arrayWithArray:[self stringSort:array lo:0 hi:(int)[array count] -1]];
-//        } else if ([object isKindOfClass:[NSNumber class]]) {
-//            array = [NSArray arrayWithArray:[self numberSort:array lo:0 hi:(int)[array count] -1]];
-//        }
-//    }
-//    return array;
-//    }
-//
-//        + (NSArray *) numberSort:(NSArray *)array lo:(int)lo hi:(int)hi {
-//            if (hi <= lo) {
-//                return array;
-//            }
-//            int lt = lo;
-//            int gt = hi;
-//            NSNumber *num = array[lo];
-//            int i = lo;
-//            while (i <= gt) {
-//                int cmp = [array[i] compare:num];
-//                if (cmp < 0) {
-//                    array = [Utilities exch:lt++ withObject:i++ in:array];
-//                } else if (cmp > 0) {
-//                    array = [Utilities exch:i withObject:gt-- in:array];
-//                } else {
-//                    i++;
-//                }
-//            }
-//            array = [self numberSort:array lo:lo hi:lt-1];
-//            array = [self numberSort:array lo:gt+1 hi:hi];
-//            return array;
-//        }
-//        
-//@end
+func quickSortLastElement (inout data:[Int], lo: Int, hi: Int) {
+  if lo < hi {
+    var p = partitionLast(&data, lo, hi)
+    comparisons += ((p - 1) - lo)
+    quickSortLastElement(&data, lo, p - 1)
+    comparisons += (hi - (p + 1))
+    quickSortLastElement(&data, p + 1, hi)
+  }
+}
+
+func swap(inout arr: [Int], a: Int, b: Int) {
+  var temp = arr[a]
+  arr[a] = arr[b]
+  arr[b] = temp
+}
+
+func partitionFirst (inout data:[Int], lo: Int, hi: Int) ->Int {
+  var pivotValue = data[lo]
+  var j = lo + 1
+  var storeIndex = lo + 1
+
+  for i in j...hi {
+    if data[i] < pivotValue {
+      swap(&data, i, storeIndex)
+      storeIndex += 1
+    }
+  }
+  swap(&data, lo, storeIndex-1)
+  return storeIndex-1
+}
+
+func partitionLast (inout data:[Int], lo: Int, hi: Int) ->Int {
+  var pivotValue = data[hi]
+  var j = lo
+  var storeIndex = lo
+
+  for i in j...hi {
+    if data[i] < pivotValue {
+      swap(&data, i, storeIndex)
+      storeIndex += 1
+    }
+  }
+  swap(&data, storeIndex , hi)
+
+  return storeIndex
+}
+
+func isSorted (data: [Int]) ->Bool {
+  for var i = 1; i < data.count; i++ {
+    if data[i] < data[i-1] { return false }
+  }
+  return true
+}
+
+func getPivotIndex (first: Int, middle: Int, last: Int) -> Int {
+  return 0
+}
+
+func quickSortFirstElement (inout data:[Int]) {
+  if data.count > 0 {
+    quickSortFirstElement(&data, 0, data.count-1)
+  }
+  println(isSorted(data))
+  println("total \(comparisons)")
+}
+
+func quickSortLastElement (inout data:[Int]) {
+  if data.count > 0 {
+    quickSortLastElement(&data, 0, data.count-1)
+  }
+  println(isSorted(data))
+  println("total \(comparisons)")
+}
+
+

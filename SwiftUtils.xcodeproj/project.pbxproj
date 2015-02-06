@@ -29,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		460350ED1A83E24C00BD36B6 /* QuickSort.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = QuickSort.txt; sourceTree = "<group>"; };
 		4629AA1F19FEF093008AFA9E /* SwiftUtils */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftUtils; sourceTree = BUILT_PRODUCTS_DIR; };
 		4629AA2219FEF093008AFA9E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4629AA2919FEF0DC008AFA9E /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		4629AA2119FEF093008AFA9E /* SwiftUtils */ = {
 			isa = PBXGroup;
 			children = (
+				460350ED1A83E24C00BD36B6 /* QuickSort.txt */,
 				4629AA2219FEF093008AFA9E /* main.swift */,
 				4629AA2919FEF0DC008AFA9E /* Node.swift */,
 				4629AA2B19FEF116008AFA9E /* Queue.swift */,
