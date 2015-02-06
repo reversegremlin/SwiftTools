@@ -15,8 +15,8 @@ q.enqueue("Coffee")
 q.enqueue("Tea")
 q.enqueue("Milk")
 let test = q.dequeue()!
-println(test)
-println(q.peek()!)
+//println(test)
+//println(q.peek()!)
 
 var s = Stack<String>()
 s.push("Niblet")
@@ -33,7 +33,7 @@ s.push("Sally")
 var rArray: [Int] = []
 
 var i = 1
-for nums in 1...1000 {
+for nums in 1...10 {
 //    let ran = Int(arc4random() % 1000)
 
     rArray.append(i++)
@@ -67,11 +67,15 @@ var anotherIntArray = intArray
 
 
 //quickSortLastElement(&intArray)
-quickSortFirstElement(&intArray)
+//quickSortFirstElement(&intArray)
+//
+//quickSortLastElement(&anotherIntArray)
 
-quickSortLastElement(&anotherIntArray)
+quickSortMedianOfThree(&rArray)
 
-
+for thing in rArray {
+  println(thing)
+}
 //quickSort(&intArray)
 //mergeSort(&nArray)
 //for thing in intArray {
