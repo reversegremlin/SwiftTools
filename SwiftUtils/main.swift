@@ -67,13 +67,13 @@ var anotherIntArray = intArray
 
 
 //quickSortLastElement(&intArray)
-//quickSortFirstElement(&intArray)
+quickSortFirstElement(&intArray)
 //
 //quickSortLastElement(&anotherIntArray)
 
-quickSortMedianOfThree(&rArray)
+//quickSortMedianOfThree(&intArray)
 
-for thing in rArray {
+for thing in intArray {
   println(thing)
 }
 //quickSort(&intArray)

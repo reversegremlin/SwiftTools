@@ -49,15 +49,15 @@ func swap(inout arr: [Int], a: Int, b: Int) {
 func partitionFirst (inout data:[Int], lo: Int, hi: Int) ->Int {
   var pivotValue = data[lo]
   var j = lo + 1
-  var storeIndex = lo + 1
+  var storeIndex = lo
 
   for i in j...hi {
     if data[i] < pivotValue {
-      swap(&data, i, storeIndex)
+      swap(&data, i, storeIndex+1)
       storeIndex += 1
     }
   }
-  swap(&data, lo, storeIndex-1)
+  swap(&data, lo, storeIndex)
   return storeIndex
 }
 
